@@ -1,5 +1,5 @@
 # Анекдотельная
-https://d5dd4dt53hqrpduoab61.apigw.yandexcloud.net - Прекрасный сервис, для того, чтобы делиться со всеми пользователями интернета своими любимыми анекдотами
+https://d5dvhk72jp2fseiqjk9c.apigw.yandexcloud.net - Прекрасный сервис, для того, чтобы делиться со всеми пользователями интернета своими любимыми анекдотами
 
 # Инфраструктура
 1. ```
@@ -26,11 +26,11 @@ https://d5dd4dt53hqrpduoab61.apigw.yandexcloud.net - Прекрасный сер
 7. Проставить следующие енвы: 
    ```
       API_SA_ID
+      AWS_SECRET_ACCESS_KEY
       AWS_ACCESS_KEY_ID
       DOCUMENT_API_ENDPOINT
       ANEKDOT_API_REPOSITORY_NAME
       ANEKDOT_API_CONTAINER_ID
-      AWS_SECRET_ACCESS_KEY
    ```
    Их можно найти в выводе скрипта и в `aws_private_key`
 8. ```
@@ -42,7 +42,7 @@ https://d5dd4dt53hqrpduoab61.apigw.yandexcloud.net - Прекрасный сер
     terraform apply -target=yandex_ydb_database_serverless.anekdot_api_gateway
     terraform apply -target=yandex_api_gateway.anekdot_frontend_gateway
    ```
-   выставляем `ANEKDOT_API_GATEWAY` и 
+   выставляем `ANEKDOT_API_GATEWAY`
 11. проставить `ANEKDOT_WEBSITE_BUCKET` локально и в `frontent/openapi.yaml`
 12. Создать бакеты командой 
    ```
