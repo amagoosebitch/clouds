@@ -51,12 +51,15 @@ https://d5dvhk72jp2fseiqjk9c.apigw.yandexcloud.net - Прекрасный сер
    terraform apply -target=yandex_storage_bucket.anekdot_frontend_bucket
    ```
 
-13. ```
+13.
+      ```
+    
     python3 ../backend/src/create_tables.py
     ```
    В папке `frontend/src/api.js` указать значение `ANEKDOT_API_GATEWAY`
 
-14. ```
+14. 
+      ```
     cd ../backend && ./deploy.sh
     cd ../frontend && ./deploy.sh
     ```
