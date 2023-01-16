@@ -50,6 +50,7 @@ https://d5dvhk72jp2fseiqjk9c.apigw.yandexcloud.net - Прекрасный сер
    ```
    terraform apply -target=yandex_storage_bucket.anekdot_frontend_bucket
    ```
+
 13. ```
     python3 ../backend/src/create_tables.py
     ```
