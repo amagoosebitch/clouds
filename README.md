@@ -43,7 +43,9 @@ https://d5dvhk72jp2fseiqjk9c.apigw.yandexcloud.net - Прекрасный сер
     terraform apply -target=yandex_api_gateway.anekdot_frontend_gateway
    ```
    выставляем `ANEKDOT_API_GATEWAY`
+
 11. проставить `ANEKDOT_WEBSITE_BUCKET` локально и в `frontent/openapi.yaml`
+
 12. Создать бакеты командой 
    ```
    terraform apply -target=yandex_storage_bucket.anekdot_frontend_bucket
@@ -51,7 +53,8 @@ https://d5dvhk72jp2fseiqjk9c.apigw.yandexcloud.net - Прекрасный сер
 13. ```
     python3 ../backend/src/create_tables.py
     ```
-В папке `frontend/src/api.js` указать значение `ANEKDOT_API_GATEWAY`
+   В папке `frontend/src/api.js` указать значение `ANEKDOT_API_GATEWAY`
+
 14. ```
     cd ../backend && ./deploy.sh
     cd ../frontend && ./deploy.sh
