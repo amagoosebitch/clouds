@@ -52,14 +52,13 @@ https://d5dvhk72jp2fseiqjk9c.apigw.yandexcloud.net - Прекрасный сер
    ```
 
 13.
-      ```
-    
+    ```
     python3 ../backend/src/create_tables.py
     ```
-   В папке `frontend/src/api.js` указать значение `ANEKDOT_API_GATEWAY`
+    В папке `frontend/src/api.js` указать значение `ANEKDOT_API_GATEWAY`
 
 14. 
-      ```
+    ```
     cd ../backend && ./deploy.sh
     cd ../frontend && ./deploy.sh
     ```
